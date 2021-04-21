@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+.yashphoto{
+    height: 40rem;
+    margin-left: 60rem;
+  
+}
+
+.logo{
+    width: 6rem;
+    height: 3rem;
+}
+.name{
+    position: absolute;
+    margin-top: 10rem;
+    color: white;
+    z-index: 1;
+    font-family: 'Architects Daughter', cursive;
+}
+#vantajs {
+    position: relative;
+    width: auto;
+    height: 500px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .photo{
+      position: absolute;
+      width: 22rem;
+      z-index: 1;
+      margin-top: 17rem;
+      margin-left: 50rem;
+  }
+  h1{
+    font-family: 'Architects Daughter', cursive;
+  }
+  .about{
+      margin-top: 10rem;
+      text-align: center;
+      
+  }
+  hr{
+    border: 3px solid #FF3F81;
+  
+    width: 15rem;
+  }
+  .yashinfo{
+     
+  width:65%;
+  margin-left:10%;
+  /* text-align: right; */
+  float: right;
+  font-size: 1.5rem;
+  padding: 5%;
+  margin-top: 4rem;
+  }
+  .myphoto{
+      width: 17rem;
+     position: relative;
+     margin-left: 3rem;
+
+  }
+
+  /* footer */
+
+  .connectlogo{
+    width: 4rem;
+    padding: 1% ;
+     
+  }
+  .foot{
+      background-color: black;
+      
+    }
+  .con{
+    text-align: center;
+    display: block;
+  }
+  .text{
+      color: white;
+      font-family: 'Architects Daughter', cursive;
+      text-align: center;
+  }
+  .developer{
+    color: white;
+    font-family: 'Architects Daughter', cursive;
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 1%;
+    margin-bottom: auto;
+  }
+/* timeline */
+#timeline{
+    margin-top: 8rem;
+    text-align: center;
+}
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+    
+  }
+  
+  .timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: #eeeeee;
+    left: 50%;
+    margin-left: -1.5px;
+  }
+  
+  .timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  
+  .timeline > li:after {
+    clear: both;
+  }
+  
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  
+  .timeline > li:after {
+    clear: both;
+  }
+  
+  .timeline > li > .timeline-panel {
+    width: 46%;
+    float: left;
+    border: 1px solid #d4d4d4;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+    -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
+  }
+  
+  .timeline > li > .timeline-panel:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    content: " ";
+  }
+  
+  .timeline > li > .timeline-panel:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    content: " ";
+  }
+  
+  .timeline > li > .timeline-badge {
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    background-color: #999999;
+    z-index: 100;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+  }
+  
+  .timeline > li.timeline-inverted > .timeline-panel {
+    float: right;
+  }
+  
+  .timeline > li.timeline-inverted > .timeline-panel:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  
+  .timeline > li.timeline-inverted > .timeline-panel:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+  }
+  
+  .timeline-badge.primary {
+    background-color: #2e6da4 !important;
+  }
+  
+  .timeline-badge.success {
+    background-color: #3f903f !important;
+  }
+  
+  .timeline-badge.warning {
+    background-color: #f0ad4e !important;
+  }
+  
+  .timeline-badge.danger {
+    background-color: #d9534f !important;
+  }
+  
+  .timeline-badge.info {
+    background-color: #5bc0de !important;
+  }
+  
+  .timeline-title {
+    margin-top: 0;
+    color: inherit;
+  }
+  
+  .timeline-body > p,
+  .timeline-body > ul {
+    margin-bottom: 0;
+  }
+  
+  .timeline-body > p + p {
+    margin-top: 5px;
+  }
+
+  /* alignment for mobile */
+  @media only screen and (max-device-width: 480px) {
+    .photo{
+        position: absolute;
+        width: 13rem;
+        z-index: 1;
+        margin-top: 25rem;
+        margin-left: 10rem;
+    }
+   
+    .foot{
+        background-color: black;
+        
+      }
+    .con{
+      text-align: center;
+      display: block;
+    }
+    .text{
+        color: white;
+        font-family: 'Architects Daughter', cursive;
+        text-align: center;
+    }
+    .developer{
+      color: white;
+      font-family: 'Architects Daughter', cursive;
+      text-align: center;
+      font-size: 1rem;
+      padding-top: 1%;
+      margin-bottom: auto;
+    }
+    .connectlogo{
+        width: 2.5rem;
+        padding: 1% ;
+         
+      }
+      .yashinfo{
+     
+        width:20rem;
+        margin: 1rem;
+      padding: 0%;
+       text-align:left;
+        font-size: 1.5rem;
+   
+        }
+        .myphoto{
+            width: 13rem;
+           position: relative;
+           margin-left: 5rem;
+      
+        }
+  
+}

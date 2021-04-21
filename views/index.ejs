@@ -3,14 +3,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="#">
+    <link rel="stylesheet" href="/home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title><%=title %></title>
 </head>
 <body>
     <%- include('./partials/nav.ejs') %>
+<div>
+    <div class="whole">
+        <h1 class="name">
+            Hello World,<br> This is Yash Dhanlobhe
+        </h1>
+        <img class="photo" src="2nd.jpg" alt="photo">
+        <div id="vantajs"></div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r119/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.21/vanta.net.min.js"></script>
+<br>
+       <div>
+           <h1 class="about">
+               About Yash
+           </h1>
+           
+<hr>
+<img src="yash.png" alt="myphoto" class="myphoto">
+<p class="yashinfo">
+    I am Yash A. Dhanlobhe. 
+Currently pursuing Information Technology B.Tech degree in Karad, India.
+My passion is improving user experience & developing apps which users will enjoy interacting with.
+I know how to get a Job done and what it takes. I have gained experience in Android & Flutter App development.
+Please feel free to contact. Cheers !!!
+</p>
+       </div>
+       <div class="container">
+        <div class="page-header">
+          <h1 id="timeline">Timeline</h1>
+          <hr>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">upto 10th education</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis,
+                  Manduma pindureta quium dia nois paga. </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-badge warning"><i class="glyphicon glyphicon-credit-card"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Upto 12th Education</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                 pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge danger"><i class="glyphicon glyphicon-credit-card"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Gcek Education</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo.
+                  receita de bolis, mais bolis eu num gostis.</p>
+              </div>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
        
     <%- include('./partials/footer.ejs') %>
+</div>
+<script type="text/javascript">
+   VANTA.NET({
+  el: "#vantajs",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+  
+  
+  </script>
 </body>
 </html>

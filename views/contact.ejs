@@ -13,8 +13,8 @@
 <body>
     <%- include('./partials/nav.ejs') %>
     <div class="container">
-
-        <form class="well form-horizontal" action=" " method="post"  id="contact_form">
+     
+        <form class="well form-horizontal" action="/msg" method="POST"  id="contact_form">
     <fieldset>
     
     <!-- Form Name -->
@@ -27,7 +27,7 @@
       <div class="col-md-4 inputGroupContainer">
       <div class="input-group">
       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-      <input  name="first_name" placeholder="First Name" class="form-control"  type="text" required>
+      <input  name="fName" placeholder="First Name" class="form-control"  type="text" required>
         </div>
       </div>
     </div>
@@ -39,7 +39,7 @@
         <div class="col-md-4 inputGroupContainer">
         <div class="input-group">
       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-      <input name="last_name" placeholder="Last Name" class="form-control"  type="text" required>
+      <input name="lName" placeholder="Last Name" class="form-control"  type="text" required>
         </div>
       </div>
     </div>
@@ -50,7 +50,7 @@
         <div class="col-md-4 inputGroupContainer">
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-      <input name="email" placeholder="E-Mail Address" class="form-control"  type="text" required>
+      <input name="eMail" placeholder="E-Mail Address" class="form-control"  type="text" required>
         </div>
       </div>
     </div>
@@ -61,7 +61,7 @@
         <div class="col-md-4 inputGroupContainer">
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-                <textarea class="form-control" name="comment" placeholder="Message Description" required></textarea>
+                <textarea class="form-control" name="body" placeholder="Message Description" required></textarea>
       </div>
       </div>
     </div>
@@ -92,7 +92,7 @@
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-            first_name: {
+            fName: {
                 validators: {
                         stringLength: {
                         min: 2,
@@ -102,7 +102,7 @@
                     }
                 }
             },
-             last_name: {
+             lName: {
                 validators: {
                      stringLength: {
                         min: 2,
@@ -112,7 +112,7 @@
                     }
                 }
             },
-            email: {
+            eMail: {
                 validators: {
                     notEmpty: {
                         message: 'Please supply your email address'
@@ -126,7 +126,7 @@
           
             
 
-            comment: {
+            body: {
                 validators: {
                       stringLength: {
                         min: 10,
