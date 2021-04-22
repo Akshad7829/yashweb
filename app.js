@@ -51,6 +51,10 @@ app.use(express.urlencoded({extended:true}));
 app.get('/success',function(req,res){
     res.render('success')
 })
+
+app.get('/project',function(req,res){
+    res.render('project')
+})
 app.post('/msg',function(req,res){
     const msg = new Message(req.body);
     msg.save()

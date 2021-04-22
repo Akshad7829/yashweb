@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/home.css">
+    <link rel="stylesheet" href="/project.css">
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <%- include('./partials/nav.ejs') %>
+    <br>
+    <div >
+        <img  class="projectimg" src="project.png" alt="project-logo">
+    </div>
+    <h2 class="project-title">
+        Projects
+    </h2>
+    <p class="subtitle">
+        I've been working on!
+    </p>
+   
+    <h4 class="projectoutline">
+        Below are some projects I had created
+    </h4>
+    <br>
+    <br>
+    <div class="exp-project">
+        <img class="expense-image" src="money.png" alt="expense app">
+        <br>
+        <h3 class="expense-title">
+            EXPENSE APP
+        </h3>
+        <div class="exp">
+            <h4 class="tit">
+               Skills Used:
+              </h4>
+    
+         <h4 class="skills-used">
+        Android Native
+         </h4>
+         <h4 class="skills-used " >
+           Flutter
+         </h4>
+         <h4 class="skills-used " >
+            Firebase
+          </h4>
+          <h4 class="skills-used">
+            Git
+          </h4>
+       </div>
+       <p class="exp-detail">
+           This is an Flutter-App as well as web-app which can be used to store<br> our daily expense.It has user-friendly UI.
+       </p>
+       <div class="text-center" >
+       <a href="https://youtu.be/mr6iO3je8Fs"> <button type="button" class="btn btn-outline-dark " style="color: #FF3F81">Demo Video</button></a>
+       <a href="https://github.com/billion-yash/money"><button type="button" class="btn  btn-dark  " style="color: #FF3F81;margin-left:1rem;">View Code</button></a> 
+       <a href="https://github.com/billion-yash/money"><button type="button" class="btn   btn-outline-light btnn" style=" background-color:#FF3F81;color: black;margin-left:1rem">Download App</button></a> 
+  
+    </div>
+    </div>
+    <br>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

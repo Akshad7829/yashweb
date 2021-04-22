@@ -50,16 +50,36 @@
   margin-left:10%;
   /* text-align: right; */
   float: right;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding: 5%;
   margin-top: 4rem;
   }
   .myphoto{
-      width: 17rem;
+      width: 16rem;
+     
      position: relative;
      margin-left: 3rem;
 
   }
+.skills{
+  display:inline-block;
+  padding: 2%;
+
+  column-count: 2;
+  border: 4px solid #23153C ;
+  border-radius: 2rem;
+  margin-left: 2rem;
+  font-size: 1.5rem;
+
+}
+.s{
+  background-color: rgb(229,228,226);
+}
+.skill-title{
+  margin-top: 10rem;
+  text-align: center;
+}
+
 
   /* footer */
 
@@ -69,8 +89,8 @@
      
   }
   .foot{
-      background-color: black;
-      
+      background-color: #23153C ;
+    
     }
   .con{
     text-align: center;
@@ -243,6 +263,7 @@
     margin-top: 5px;
   }
 
+
   /* alignment for mobile */
   @media only screen and (max-device-width: 480px) {
     .photo{
@@ -252,9 +273,11 @@
         margin-top: 25rem;
         margin-left: 10rem;
     }
-   
+    .about-whole{
+      background-color: red;
+    }
     .foot{
-        background-color: black;
+        background-color: #23153C ;
         
       }
     .con{
@@ -280,9 +303,9 @@
          
       }
       .yashinfo{
-     
+     background-color: rgb(245, 43, 43);
         width:20rem;
-        margin: 1rem;
+        margin-left: 0rem;
       padding: 0%;
        text-align:left;
         font-size: 1.5rem;
@@ -294,5 +317,21 @@
            margin-left: 5rem;
       
         }
+        .skills{
+          display:inline-block;
+          padding: 3%;
+        
+         column-count: inherit;
+          border: 5px solid #23153C ;
+          border-radius: 2rem;
+          margin-left: 2rem;
+          font-size: 1.5rem;
+        
+        }
+        .s{
+          padding: 1%;
+          background-color: rgb(229,228,226);
+        }
+        
   
 }

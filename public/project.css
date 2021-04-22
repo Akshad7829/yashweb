@@ -1,0 +1,116 @@
+  /* project design */
+  @import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+
+  .projectimg{
+    width: 7rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.project-title{
+    text-align: center;
+}
+.subtitle{
+text-align: center;
+}
+.projectoutline{
+    text-align: center;
+}
+.expense-image{
+    width: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.expense-title{
+text-align: center;
+font-family: 'Architects Daughter', cursive;
+font-weight: bold;
+}
+.exp{
+    margin-top: 2rem;
+    text-align: center;
+}
+.skills-used{
+    display:inline-block;
+  padding: 1%;
+
+
+  /* border: 3px solid #23153C ; */
+  border-radius: 1rem;
+  margin-left: 0rem;
+  font-size: 1rem;
+  color: #FF3F81;
+}
+.tit{
+    display:inline-block; 
+    font-size: 1rem;
+}
+.exp-detail{
+    text-align: center;
+}
+.exp-project{
+    background-color: rgb(229,228,226);
+    padding: 1%;
+}
+.text-center{
+display: block;
+
+text-align: center;
+
+}
+
+
+/* alignment for mobile */
+@media only screen and (max-device-width: 480px) {
+    .expense-image{
+        width: 15rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .exp-project{
+        background-color: rgb(229,228,226);
+        padding: 3%;
+    }
+  
+    .exp{
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .skills-used{
+        display:grid;
+        
+      padding: 1%;
+    
+    
+      /* border: 3px solid #23153C ; */
+      border-radius: 1rem;
+      margin-left: 0.2rem;
+      font-size: 1rem;
+      color: #FF3F81;
+    }
+    .tit{
+        display:inline-block; 
+        font-size: 1rem;
+    }
+    .exp-detail{
+       padding: 2%;
+    }
+    .btnn{
+        margin-top: 1rem;
+       
+        
+    }
+    
+  .projectimg{
+    width: 5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+  
+}
