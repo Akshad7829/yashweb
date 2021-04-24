@@ -62,7 +62,21 @@ text-align: center;
 
 }
 
-
+/* capture styleing */
+.capture-image{
+    width: 15rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.cap{
+    margin-top: 2rem;
+    text-align: center;
+}
+.cap-project{
+    background-color: white;
+    padding: 1%;
+}
 /* alignment for mobile */
 @media only screen and (max-device-width: 480px) {
     .expense-image{

@@ -3,9 +3,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
  
+   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/css/bootstrapValidator.min.css"/>
 
     
      <title><%= title %></title>
@@ -51,9 +53,10 @@
         <div class="col-md-4 inputGroupContainer">
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-      <input name="eMail" placeholder="E-Mail Address" class="form-control"  type="text" required>
+      <input name="eMail" placeholder="E-Mail Address" class="form-control"   type="text" required>
         </div>
       </div>
+
     </div>
     
     <!-- Message input    -->
@@ -73,23 +76,26 @@
     <div class="form-group">
       <label class="col-md-4 control-label"></label>
       <div class="col-md-4">
-        <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button>
+        <!-- <button type="submit" class="btn btn-warning" >Send <span class="glyphicon glyphicon-send"></span></button> -->
+        <button type="submit" class="btn  btn-outline-light  " style="color: black;margin-left:1rem;  background-color:#FF3F81;width: 7rem;">Submit <span class="glyphicon glyphicon-send"></span></button>
       </div>
     </div>
-    
+ 
     </fieldset>
-    </form>
+ 
     </div>
     <br>
     <br>
   
     <%- include('./partials/footer.ejs') %>
         </div><!-- /.container -->
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
         <script>
             $(document).ready(function() {
     $('#contact_form').bootstrapValidator({
         // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
         feedbackIcons: {
+          
             valid: 'glyphicon glyphicon-ok',
             invalid: 'glyphicon glyphicon-remove',
             validating: 'glyphicon glyphicon-refresh'
@@ -137,7 +143,7 @@
                         message:'Please enter at least 10 characters and no more than 200'
                     },
                     notEmpty: {
-                        message: 'Please supply a description of your project'
+                        message: 'Please supply a description of your feedback'
                     }
                     }
                 }
