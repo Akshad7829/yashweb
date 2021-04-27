@@ -44,6 +44,17 @@ font-weight: bold;
   font-size: 1rem;
   color: #FF3F81;
 }
+.skillss{
+    display:inline-block;
+  padding: 1%;
+
+
+  /* border: 3px solid #23153C ; */
+  border-radius: 1rem;
+  margin-left: 0rem;
+  font-size: 1rem;
+  color: #FF3F81;
+}
 .tit{
     display:inline-block; 
     font-size: 1rem;
@@ -55,6 +66,7 @@ font-weight: bold;
     background-color: rgb(229,228,226);
     padding: 1%;
 }
+
 .text-center{
 display: block;
 
@@ -69,12 +81,22 @@ text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
+.music-image{
+    width: 12rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .cap{
     margin-top: 2rem;
     text-align: center;
 }
 .cap-project{
     background-color: white;
+    padding: 1%;
+}
+.music{
+    background-color: rgb(229,228,226);
     padding: 1%;
 }
 /* alignment for mobile */
@@ -89,12 +111,16 @@ text-align: center;
         background-color: rgb(229,228,226);
         padding: 3%;
     }
+    .music{
+        background-color: rgb(229,228,226);
+        padding: 3%;
+    }
   
     .exp{
         margin-top: 2rem;
         text-align: center;
     }
-    .skills-used{
+    .skillss{
         display:grid;
         
       padding: 1%;

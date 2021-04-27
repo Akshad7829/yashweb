@@ -14,19 +14,21 @@
 </head>
 <body>
     <%- include('./partials/nav.ejs') %>
-  
+  <br>
+  <br>
+  <!-- <br> -->
     <div class="container">
      
         <form class="well form-horizontal" action="/msg" method="POST"  id="contact_form">
-    <fieldset>
+    <fieldset >
     
     <!-- Form Name -->
-    <legend>Contact Us Today!</legend>
-    
+    <legend class="contact-title">Give Me a feedback so that I can make the changes if necessary!</legend>
+   <div class="full-form">
     <!-- Text input-->
     
     <div class="form-group">
-      <label class="col-md-4 control-label">First Name</label>  
+      <label class="col-md-4 control-label" style="font-weight: bold;">First Name:-</label>  
       <div class="col-md-4 inputGroupContainer">
       <div class="input-group">
       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -38,7 +40,7 @@
     <!-- Text input-->
     
     <div class="form-group">
-      <label class="col-md-4 control-label" >Last Name</label> 
+      <label class="col-md-4 control-label" style="font-weight: bold;" >Last Name:-</label> 
         <div class="col-md-4 inputGroupContainer">
         <div class="input-group">
       <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -49,7 +51,7 @@
     
     <!-- Text input-->
            <div class="form-group">
-      <label class="col-md-4 control-label">E-Mail</label>  
+      <label class="col-md-4 control-label" style="font-weight: bold;">E-Mail:-</label>  
         <div class="col-md-4 inputGroupContainer">
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
@@ -61,7 +63,7 @@
     
     <!-- Message input    -->
     <div class="form-group">
-      <label class="col-md-4 control-label">Message</label>
+      <label class="col-md-4 control-label" style="font-weight: bold;">Message:-</label>
         <div class="col-md-4 inputGroupContainer">
         <div class="input-group">
             <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
@@ -86,7 +88,7 @@
     </div>
     <br>
     <br>
-  
+  </div>
     <%- include('./partials/footer.ejs') %>
         </div><!-- /.container -->
         <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.2/js/bootstrapValidator.min.js"></script>
@@ -107,7 +109,7 @@
                         min: 2,
                     },
                         notEmpty: {
-                        message: 'Please supply your first name'
+                        message: '<p style=color:red;>Please enter your first name</p>'
                     }
                 }
             },
@@ -117,17 +119,17 @@
                         min: 2,
                     },
                     notEmpty: {
-                        message: 'Please supply your last name'
+                        message: '<p style=color:red;>Please enter your last name</p>'
                     }
                 }
             },
             eMail: {
                 validators: {
                     notEmpty: {
-                        message: 'Please supply your email address'
+                        message: '<p style=color:red;>Please enter your email address</p>'
                     },
                     emailAddress: {
-                        message: 'Please supply a valid email address'
+                        message: '<p style=color:red;>Please enter a valid email address</p>'
                     }
                 }
             },
@@ -138,12 +140,12 @@
             body: {
                 validators: {
                       stringLength: {
-                        min: 10,
+                        min: 5,
                         max: 200,
-                        message:'Please enter at least 10 characters and no more than 200'
+                        message:'<p style=color:red;>Please enter at least 5 characters and no more than 200</p>'
                     },
                     notEmpty: {
-                        message: 'Please supply a description of your feedback'
+                        message: '<p style=color:red;>Please enter a description of your feedback</p>'
                     }
                     }
                 }

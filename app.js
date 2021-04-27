@@ -59,7 +59,7 @@ app.post('/msg',function(req,res){
     const msg = new Message(req.body);
     msg.save()
     .then((result) =>{
-        res.redirect('/')
+        res.redirect('/success')
         
     })
     .catch((err) =>{
