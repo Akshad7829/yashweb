@@ -12,6 +12,7 @@
 }
 .name{
     position: absolute;
+   
     margin-top: 10rem;
     color: white;
     z-index: 1;
