@@ -16,6 +16,11 @@
     "sweetalert": "^2.1.2",
     "validator": "^13.6.0"
   },
+  "scripts": {
+      
+    "start": "node backend/server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
+},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
