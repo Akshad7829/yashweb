@@ -11,12 +11,16 @@
 
 .project-title{
     text-align: center;
+    font-family: 'Orelega One', cursive;
+    font-size: 3rem;
 }
 .subtitle{
 text-align: center;
+font-family: 'Montserrat', sans-serif;
 }
 .projectoutline{
     text-align: center;
+    font-family:Arial, Helvetica, sans-serif
 }
 .expense-image{
     width: 20rem;
@@ -26,7 +30,7 @@ text-align: center;
 }
 .expense-title{
 text-align: center;
-font-family: 'Architects Daughter', cursive;
+font-family: 'Orelega One', cursive;
 font-weight: bold;
 }
 .exp{
@@ -61,6 +65,7 @@ font-weight: bold;
 }
 .exp-detail{
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
 }
 .exp-project{
     background-color: rgb(229,228,226);
@@ -101,6 +106,13 @@ text-align: center;
 }
 /* alignment for mobile */
 @media only screen and (max-device-width: 480px) {
+    .project-title{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 2.5rem;
+    }
+    .expense-title{
+        font-family:Arial, Helvetica, sans-serif;
+    }
     .expense-image{
         width: 15rem;
         display: block;

@@ -14,7 +14,7 @@ const app = express();
 
 
 //connect to mongodb
-const dbURI="mongodb+srv://silentdude:asn1234@yashweb.m1c7k.mongodb.net/form?retryWrites=true&w=majority"
+const dbURI="mongodb+srv://yash:yash123456@cluster0.hnaib.mongodb.net/yash?retryWrites=true&w=majority"
 mongoose.connect(dbURI,{ useNewUrlParser:true , useUnifiedTopology:true})
 .then((result) =>
 app.listen(process.env.PORT || 3000 ))
@@ -69,13 +69,13 @@ app.post('/msg',function(req,res){
 })
 
 app.get('/contact',function(req,res){
-    res.render('contact',{title:'Contact Me',success:''});
+    res.render('contact',{title:'Yash Dhanlobhe',success:''});
 
 });
 
 
 //get methods
 app.get('/',function(req,res){
-    res.render('index',{title:'Home'})
+    res.render('index',{title:'Yash Dhanlobhe'})
 });
 

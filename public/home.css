@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 .yashphoto{
     height: 40rem;
     margin-left: 60rem;
@@ -7,16 +8,17 @@
 }
 
 .logo{
-    width: 6rem;
-    height: 3rem;
+    width: 5rem;
+    height: 2.5rem;
 }
 .name{
     position: absolute;
-   
+    margin-left: 2rem;
+   font-size: 3rem;
     margin-top: 10rem;
     color: white;
     z-index: 1;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Orelega One', cursive;
 }
 #vantajs {
     position: relative;
@@ -33,7 +35,7 @@
       margin-left: 50rem;
   }
   h1{
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Orelega One', cursive;
   }
   .about{
       margin-top: 10rem;
@@ -41,25 +43,27 @@
       
   }
   hr{
-    border: 3px solid #FF3F81;
+    border: 4px solid #FF3F81;
   
     width: 15rem;
   }
   .yashinfo{
      
   width:65%;
-  margin-left:10%;
+  margin-left:1%;
   /* text-align: right; */
   float: right;
   font-size: 1.7rem;
   padding: 5%;
-  margin-top: 4rem;
+  margin-top: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 3rem;
   }
   .myphoto{
       width: 16rem;
      
      position: relative;
-     margin-left: 3rem;
+     margin-left: 7rem;
 
   }
   .skills-used{
@@ -69,7 +73,8 @@
 
   /* border: 3px solid #23153C ; */
   border-radius: 1rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
+  
   font-size: 2rem;
   color: #FF3F81;
 }
@@ -77,10 +82,11 @@
   display:inline-block;
 padding: 1%;
 
-
+text-align: center;
 /* border: 3px solid #23153C ; */
 border-radius: 1rem;
-margin-left: 3rem;
+ margin-left: 12rem;
+/* margin-right: 3rem; */
 font-size: 2rem;
 color: #FF3F81;
 }
@@ -105,6 +111,7 @@ color: #FF3F81;
 
 .link{
   font-size: 1.3rem;
+  margin-left: 2rem;
 }
   /* footer */
 
@@ -123,12 +130,12 @@ color: #FF3F81;
   }
   .text{
       color: white;
-      font-family: 'Architects Daughter', cursive;
+      font-family: 'Orelega One', cursive;
       text-align: center;
   }
   .developer{
     color: white;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 1rem;
     padding-top: 1%;
@@ -144,6 +151,9 @@ color: #FF3F81;
     padding: 20px 0 20px;
     position: relative;
     
+  }
+  .time{
+    font-family: 'Montserrat', sans-serif;
   }
   
   .timeline:before {
@@ -292,6 +302,14 @@ color: #FF3F81;
 
   /* alignment for mobile */
   @media only screen and (max-device-width: 480px) {
+    .name{
+      font-family:'Courier New', Courier, monospace;
+      font-size: 2.5rem;
+      margin-left: 1.5rem;
+    }
+    h1{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
     .timeline-body > p,
     .timeline-body > ul {
       margin-bottom: 0;
@@ -322,12 +340,12 @@ color: #FF3F81;
     }
     .text{
         color: white;
-        font-family: 'Architects Daughter', cursive;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         text-align: center;
     }
     .developer{
       color: white;
-      font-family: 'Architects Daughter', cursive;
+      font-family: 'Montserrat', sans-serif;
       text-align: center;
       font-size: 1rem;
       padding-top: 1%;
@@ -346,6 +364,7 @@ color: #FF3F81;
       padding: -1%;
        text-align:left;
         font-size: 1.5rem;
+        line-height: 2rem;
    
         }
         .myphoto{
